@@ -26,5 +26,5 @@ reranker = LocalAIRerank(
         openai_api_base="http://localhost:8080",
     )
 reranked_docs = reranker.compress_documents(documents=[
-    Document(page_content="bar"),Document(page_content="baz")], query="foo")
+    Document(page_content="bar"), Document(page_content="baz")], query="foo")
 ```
