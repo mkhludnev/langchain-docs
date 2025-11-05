@@ -17,11 +17,14 @@ pip install -U langchain-localai
 ```
 
 ```python
+import os
 from langchain_localai import LocalAIRerank
 from langchain_core.documents import Document
 
+# Set your LocalAI/OpenAI API key as an environment variable for security.
+# For example, in your shell: export OPENAI_API_KEY="your-key-here"
 reranker = LocalAIRerank(
-        openai_api_key="foo",
+        openai_api_key=os.environ.get("OPENAI_API_KEY"),
         model="bge-reranker-v2-m3",
         openai_api_base="http://localhost:8080",
     )
