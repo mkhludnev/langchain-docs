@@ -115,7 +115,17 @@ LINK_MAPS: list[LinkMap] = [
             "PIIMiddleware": "langchain/middleware/#langchain.agents.middleware.PIIMiddleware",
             "SummarizationMiddleware": "langchain/middleware/#langchain.agents.middleware.SummarizationMiddleware",
             "HumanInTheLoopMiddleware": "langchain/middleware/#langchain.agents.middleware.HumanInTheLoopMiddleware",
+            "ModelCallLimitMiddleware": "langchain/middleware/#langchain.agents.middleware.ModelCallLimitMiddleware",
+            "ToolCallLimitMiddleware": "langchain/middleware/#langchain.agents.middleware.ToolCallLimitMiddleware",
+            "ModelFallbackMiddleware": "langchain/middleware/#langchain.agents.middleware.ModelFallbackMiddleware",
+            "TodoListMiddleware": "langchain/middleware/#langchain.agents.middleware.TodoListMiddleware",
+            "LLMToolSelectorMiddleware": "langchain/middleware/#langchain.agents.middleware.LLMToolSelectorMiddleware",
+            "ToolRetryMiddleware": "langchain/middleware/#langchain.agents.middleware.ToolRetryMiddleware",
+            "LLMToolEmulator": "langchain/middleware/#langchain.agents.middleware.LLMToolEmulator",
+            "ContextEditingMiddleware": "langchain/middleware/#langchain.agents.middleware.ContextEditingMiddleware",
             "ClearToolUsesEdit": "langchain/middleware/#langchain.agents.middleware.ClearToolUsesEdit",
+            "ContextEdit": "langchain/middleware/#langchain.agents.middleware.ContextEdit",
+            "InterruptOnConfig": "langchain/middleware/#langchain.agents.middleware.InterruptOnConfig",
             # Messages
             "AIMessage": "langchain/messages/#langchain.messages.AIMessage",
             "AIMessageChunk": "langchain/messages/#langchain.messages.AIMessageChunk",
@@ -158,6 +168,7 @@ LINK_MAPS: list[LinkMap] = [
             "langchain-anthropic": "integrations/langchain_anthropic",
             "ChatAnthropic": "integrations/langchain_anthropic/ChatAnthropic",
             "AnthropicLLM": "integrations/langchain_anthropic/AnthropicLLM",
+            "AnthropicPromptCachingMiddleware": "integrations/langchain_anthropic/middleware/#langchain_anthropic.middleware.AnthropicPromptCachingMiddleware",
             # langchain-google
             "langchain-google": "integrations/langchain_google",
             "langchain-google-genai": "integrations/langchain_google_genai",
@@ -212,6 +223,12 @@ LINK_MAPS: list[LinkMap] = [
             "on_llm_new_token": "langchain_core/callbacks/#langchain_core.callbacks.base.AsyncCallbackHandler.on_llm_new_token",
             # Rate limiters
             "InMemoryRateLimiter": "langchain_core/rate_limiters/#langchain_core.rate_limiters.InMemoryRateLimiter",
+            # LangSmith SDK
+            "Client": "langsmith/observability/sdk/client/#langsmith.client.Client",
+            "Client.evaluate": "langsmith/observability/sdk/client/#langsmith.client.Client.evaluate",
+            "Client.aevaluate": "langsmith/observability/sdk/client/#langsmith.client.Client.aevaluate",
+            "Client.get_experiment_results": "langsmith/observability/sdk/client/#langsmith.client.Client.get_experiment_results",
+            "ExperimentResults": "langsmith/observability/sdk/evaluation/#langsmith.evaluation._runner.ExperimentResults",
             # LangGraph
             "get_stream_writer": "langgraph/config/#langgraph.config.get_stream_writer",
             "StateGraph": "langgraph/graphs/#langgraph.graph.state.StateGraph",
@@ -364,6 +381,9 @@ LINK_MAPS: list[LinkMap] = [
             "AssistantsClient.search": "classes/_langchain_langgraph-sdk.client.AssistantsClient.html#search",
             "RunsClient": "classes/_langchain_langgraph-sdk.client.RunsClient.html",
             "RunsClient.stream": "classes/_langchain_langgraph-sdk.client.RunsClient.html#stream",
+            "ClearToolUsesEdit": "classes/langchain.index.ClearToolUsesEdit.html",
+            "ContextEdit": "interfaces/langchain.index.ContextEdit.html",
+            "toolRetryMiddleware": "functions/langchain.index.toolRetryMiddleware.html",
         },
     },
 ]

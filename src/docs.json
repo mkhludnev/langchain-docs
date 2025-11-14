@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "aspen",
   "name": "Docs by LangChain",
   "description": "Documentation for LangChain, LangGraph, LangSmith, and more.",
   "colors": {
@@ -101,10 +101,6 @@
       "youtube": "https://www.youtube.com/@LangChain"
     }
   },
-  "banner": {
-    "content": "We've raised a $125M Series B to build the platform for agent engineering. [Read more](https://blog.langchain.com/series-b/?utm_medium=internal&utm_source=docs&utm_campaign=q4-2025_october-launch-week_aw).",
-    "dismissible": true
-  },
   "navbar": {
     "links": [
       {
@@ -165,8 +161,15 @@
                         "oss/python/langchain/tools",
                         "oss/python/langchain/short-term-memory",
                         "oss/python/langchain/streaming",
-                        "oss/python/langchain/middleware",
                         "oss/python/langchain/structured-output"
+                      ]
+                    },
+                    {
+                      "group": "Middleware",
+                      "pages": [
+                        "oss/python/langchain/middleware/overview",
+                        "oss/python/langchain/middleware/built-in",
+                        "oss/python/langchain/middleware/custom"
                       ]
                     },
                     {
@@ -280,6 +283,12 @@
                         "oss/python/deepagents/human-in-the-loop",
                         "oss/python/deepagents/long-term-memory",
                         "oss/python/deepagents/middleware"
+                      ]
+                    },
+                    {
+                      "group": "Command line interface",
+                      "pages": [
+                        "oss/python/deepagents/cli"
                       ]
                     }
                   ]
@@ -486,8 +495,15 @@
                         "oss/javascript/langchain/tools",
                         "oss/javascript/langchain/short-term-memory",
                         "oss/javascript/langchain/streaming",
-                        "oss/javascript/langchain/middleware",
                         "oss/javascript/langchain/structured-output"
+                      ]
+                    },
+                    {
+                      "group": "Middleware",
+                      "pages": [
+                        "oss/javascript/langchain/middleware/overview",
+                        "oss/javascript/langchain/middleware/built-in",
+                        "oss/javascript/langchain/middleware/custom"
                       ]
                     },
                     {
@@ -601,6 +617,12 @@
                         "oss/javascript/deepagents/human-in-the-loop",
                         "oss/javascript/deepagents/long-term-memory",
                         "oss/javascript/deepagents/middleware"
+                      ]
+                    },
+                    {
+                      "group": "Deep Agents CLI",
+                      "pages": [
+                        "oss/javascript/deepagents/cli"
                       ]
                     }
                   ]
@@ -1070,6 +1092,7 @@
                         "langsmith/repetition",
                         "langsmith/rate-limiting",
                         "langsmith/local",
+                        "langsmith/read-local-experiment-results",
                         "langsmith/langchain-runnable",
                         "langsmith/evaluate-graph",
                         "langsmith/evaluate-existing-experiment",
@@ -1722,6 +1745,82 @@
     {
       "source": "/langsmith/langgraph-server-changelog",
       "destination": "/langsmith/agent-server-changelog"
+    },
+    {
+      "source": "/oss/python/langchain/middleware",
+      "destination": "/oss/python/langchain/middleware/overview"
+    },
+    {
+      "source": "/oss/javascript/langchain/middleware",
+      "destination": "/oss/javascript/langchain/middleware/overview"
+    },
+    {
+      "source": "/oss/python/integrations/tools/toolbox",
+      "destination": "/oss/python/integrations/tools/mcp_toolbox"
+    },
+    {
+      "source": "/oss/integrations/tools/toolbox",
+      "destination": "/oss/integrations/tools/mcp_toolbox"
+    },
+    {
+      "source": "/oss/python/integrations/tools/gmail",
+      "destination": "/oss/python/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/integrations/tools/gmail",
+      "destination": "/oss/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/javascript/integrations/tools/gmail",
+      "destination": "/oss/javascript/integrations/tools/google_gmail"
+    },
+    {
+      "source": "/oss/python/integrations/chat_loaders/gmail",
+      "destination": "/oss/python/integrations/chat_loaders/google_gmail"
+    },
+    {
+      "source": "/oss/integrations/chat_loaders/gmail",
+      "destination": "/oss/integrations/chat_loaders/google_gmail"
+    },
+    {
+      "source": "/oss/python/integrations/vectorstores/scann",
+      "destination": "/oss/python/integrations/vectorstores/google_scann"
+    },
+    {
+      "source": "/oss/integrations/vectorstores/scann",
+      "destination": "/oss/integrations/vectorstores/google_scann"
+    },
+    {
+      "source": "/oss/python/integrations/chat/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/chat/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/chat/google_vertex_ai_palm",
+      "destination": "/oss/integrations/chat/google_vertex_ai"
+    },
+    {
+      "source": "/oss/python/integrations/text_embedding/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/text_embedding/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/text_embedding/google_vertex_ai_palm",
+      "destination": "/oss/integrations/text_embedding/google_vertex_ai"
+    },
+    {
+      "source": "/oss/python/integrations/llms/google_vertex_ai_palm",
+      "destination": "/oss/python/integrations/llms/google_vertex_ai"
+    },
+    {
+      "source": "/oss/integrations/llms/google_vertex_ai_palm",
+      "destination": "/oss/integrations/llms/google_vertex_ai"
+    },
+    {
+      "source": "/oss/javascript/integrations/text_embedding/google_generativeai",
+      "destination": "/oss/javascript/integrations/text_embedding/google_generative_ai"
+    },
+    {
+      "source": "/oss/integrations/text_embedding/google_generativeai",
+      "destination": "/oss/integrations/text_embedding/google_generative_ai"
     }
   ]
 }
